@@ -1,6 +1,6 @@
-# run this program break a csv file into separate text files
+# run this program to break a csv file into separate text files
 
-################## INSTRUCTION ###################
+##################### INSTRUCTION ######################
 # 1.edit the values of indir, colname, outdir below
 # 2.save change to the py file
 # 3.open cmd (or any console emulator of your choice)
@@ -10,10 +10,13 @@
 
 import pandas as pd
 
+############## EDIT THE VARIABLES BELOW ################
 
 indir = '<enter the pathfile of your csv file>'
 colname = '<enter the column you wish to convert>'
 outdir = '<enter your preferred output directory>'
+
+################## CODE GOES BELOW ####################
 
 def csv2txt(indir, colname, outdir):
     """break a csv column into multiple txt files"""
@@ -32,3 +35,6 @@ def csv2txt(indir, colname, outdir):
             f.write(txtbody)
 
             f.close()
+
+# TODO
+# allow custom txtnames (naming based on metadata, etc.)
