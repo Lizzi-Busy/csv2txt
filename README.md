@@ -1,6 +1,6 @@
 # csv2txt
 
-python script to break csv column into multiple txt files (a byproduct of my nlp project)
+python script to break csv into multiple txt files (a byproduct of my nlp project)
 
 ## Inspiration & Description
 
