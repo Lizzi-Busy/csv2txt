@@ -11,7 +11,7 @@ Well, this all started off with my complaint:
 Imagine that you had scraped a whole bunch of texts into a single csv file, you were happy and you'd never been more ready for corpus analysis. Then you opened `AntConc` and realized the software could only take txt sources. That discovery ruined your day...
 
 <p align="center">
-  <img src=/image/facepalm.jpg align='center' width=100/>
+  <img src=/image/facepalm2.jpg align='center' width=300/>
 </p>
 
 There are a number of csv-txt converters available online. But most of them either:
