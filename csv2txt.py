@@ -12,21 +12,23 @@ import pandas as pd
 
 
 indir = '<enter the pathfile of your csv file>'
-colname = '<enter the column you wish to convert>' 
+colname = '<enter the column you wish to convert>'
 outdir = '<enter your preferred output directory>'
 
+def csv2txt(indir, colname, outdir):
+    """break a csv column into multiple txt files"""
 
-with open(indir, encoding="utf8", errors='ignore') as f:
-    df = pd.read_csv(f)
-    # loop through all reviews
-    for i in range(len(df)):
-        # single out review body
-        txtbody = df.body[i]
+    with open(indir, encoding="utf8", errors='ignore') as f:
+        df = pd.read_csv(f)
+        # loop through all reviews
+        for i in range(len(df)):
+            # single out review body
+            txtbody = df.body[i]
 
-        # write to txt file
-        # edit 'txtname' below if you prefer custom filenames
-        txtname = outdir + "text" + str(i+1) + ".txt"
-        f = open(txtname,"w")
-        f.write(txtbody)
+            # write to txt file
+            # edit 'txtname' below if you prefer custom filenames
+            txtname = outdir  + "text" + str(i+1) + ".txt"
+            f = open(txtname,"w")
+            f.write(txtbody)
 
-        f.close()
+            f.close()
