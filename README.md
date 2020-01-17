@@ -10,6 +10,10 @@ Well, this all started off with my complaint:
 
 Imagine that you had scraped a whole bunch of texts into a single csv file, you were happy and you'd never been more ready for corpus analysis. Then you opened `AntConc` and realized the software could only take txt sources. That discovery ruined your day...
 
+<p align="center">
+  <img src=/image/facepalm.jpg align='center' width=100/>
+</p>
+
 There are a number of csv-txt converters available online. But most of them either:
 * throw the entire csv file into one single txt, or
 * allow you to break each row into a single txt, which contains all the metadata/extra stuff you've entered in the same row, whether you like it or not.
@@ -26,11 +30,15 @@ After a few trials of the existing tools I decided to create a converter on my o
 
 before: a messy csv file with texts in column I (shaded below) and metadata in columns A-H
 
-<img src=/image/screenshot01.jpg width=80%/>
+<p align="center">
+  <img src=/image/screenshot01.jpg width=80%/>
+</p>
 
 after: each cell converted to a single txt file, which can be processed / analyzed by AntConc!
 
-<img src=/image/screenshot02.jpg width=70%/>
+<p align="center">
+  <img src=/image/screenshot02.jpg width=70%/>
+</p>
 
 ## Some ideas for later versions
 
